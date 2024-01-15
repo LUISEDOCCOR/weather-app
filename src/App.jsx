@@ -42,9 +42,9 @@ function App() {
 
   return (
     <div data-theme="dark" className="bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800 dark:from-gray-700 dark:via-gray-900 dark:to-black dark:text-white text-zinc-200 min-h-screen min-w-screen">
-        <header className="mx-auto max-w-7xl py-12">
-          <nav className="flex justify-between items-center">
-            <h1 className="font-semibold text-4xl">Weather App</h1>
+        <header className="mx-auto py-12 lg:max-w-7xl lg:px-0 md:px-12">
+          <nav className="flex md:flex-row md:justify-between md:items-center flex-col items-center">
+            <h1 className="font-semibold text-4xl md:block hidden">Weather App</h1>
             <div className="flex items-end gap-2">
               <Searcher 
                 setValue={setSearchValue} 
@@ -59,7 +59,7 @@ function App() {
             </div>
           </nav>
         </header>
-        <main className="flex justify-center mt-32">
+        <main className="flex justify-center mt-16 md:mt-32">
           <CurrentWeather data={Location}/>
         </main>
     </div>
