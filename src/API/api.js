@@ -1,5 +1,4 @@
 const apiKey  = import.meta.env.VITE_API_KEY;
-// const apiKey  = "2e368741d2224580272a3ecebcafc753";
 
 
 const addToLocalStorage = (city) => {
@@ -7,7 +6,6 @@ const addToLocalStorage = (city) => {
 }
 
 export const getLocation= async (city) => {
-    console.log(apiKey)
     addToLocalStorage(city)
     const data = await fetch (`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`)
     const Location = await data.json()
