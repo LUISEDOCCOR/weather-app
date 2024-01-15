@@ -1,5 +1,5 @@
-// const apiKey  = import.meta.env.VITE_API_KEY;
-const apiKey  = "2e368741d2224580272a3ecebcafc753";
+const apiKey  = import.meta.env.VITE_API_KEY;
+// const apiKey  = "2e368741d2224580272a3ecebcafc753";
 
 
 const addToLocalStorage = (city) => {
