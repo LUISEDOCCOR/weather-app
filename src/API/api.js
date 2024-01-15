@@ -7,7 +7,7 @@ const addToLocalStorage = (city) => {
 
 export const getLocation= async (city) => {
     addToLocalStorage(city)
-    const data = await fetch (`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`)
+    const data = await fetch (`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`)
     const Location = await data.json()
     return Location
 }
